@@ -1,0 +1,21 @@
+<form>
+    Which way do you want to go?
+    <br /><br />
+    <input type="hidden" id="dialog-redirect" name="goto" />
+    <div style="display:flex; flex-direction:column; width: 10rem; gap: 10px;">
+        <div style="display:flex; flex-direction:row; justify-content: center; align-content: center;">
+            <div>
+                <button type="button" style="width:50px;" onclick="$('#dialog-redirect').val('up');"><i class="fa-solid fa-circle-up"></i></button>
+            </div>
+        </div>
+        <div style="display:flex; flex-direction:row; justify-content:space-between; align-content: center;">
+            <button type="button" style="width:50px;" onclick="$('#dialog-redirect').val('left');"><i class="fa-solid fa-circle-left"></i></button>
+            <button type="button" style="width:50px;" onclick="$('#dialog-redirect').val('right');"><i class="fa-solid fa-circle-right"></i></button>
+        </div>
+        <div style="display:flex; flex-direction:row; justify-content: center; align-content: center;">
+            <div style="justify-content: center; align-content: center;">
+                <button type="button" style="width:50px; " onclick="$('#dialog-redirect').val('down');"><i class="fa-solid fa-circle-down"></i></button>
+            </div>
+        </div>
+    </div>
+</form>
